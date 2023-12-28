@@ -45,32 +45,32 @@ try {
     $mail->isSMTP();                                            //Send using SMTP
     $mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
     $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-    $mail->Username   = 'neeraj.moorjani@petromin.in';                     //SMTP username
-    $mail->Password   = 'mgxptbqwviyppksx';   
+    $mail->Username   = 'deepak@gmail.com';                     //SMTP username
+    $mail->Password   = 'set your password';   
     $mail->SMTPSecure = 'ssl';
     //SMTP password
    // $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
     $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
     //Recipients
-    $mail->setFrom('neeraj.moorjani@petromin.in', 'Alethia Food ');
-    $mail->addAddress('deepak@bleap.in', 'Alethai '); // Add the original recipient
-    $mail->addAddress('deepak@bleap.in'); // Name is optional
-    $mail->addAddress('deepakm1600@gmail.com'); // Add an extra recipient
-    $mail->addAddress('abishai@bleap.in'); // Add another extra recipient
-    $mail->addReplyTo('deepak@bleap.in', 'Information');
-    $mail->addCC('deepak@bleap.in');
-    $mail->addBCC('deepak@bleap.in');
+    $mail->setFrom('deepak@gmail.com', 'Deepak mail ');
+    $mail->addAddress('deepak@git.in', 'Deepak '); // Add the original recipient
+    $mail->addAddress('deepak@git.in'); // Name is optional
+    $mail->addAddress('deepak@gmail.com'); // Add an extra recipient
+    $mail->addAddress('firstrec@gmail.com'); // Add another extra recipient
+    $mail->addReplyTo('deepak@gmail.in', 'Information');
+    $mail->addCC('deepak@git.in');
+    $mail->addBCC('deepak@git.in');
 
 
 
 
-    // $mail->setFrom('neeraj.moorjani@petromin.in', 'Mailer');
-    // $mail->addAddress('deepak@bleap.in', 'Dee User');     //Add a recipient
-    // $mail->addAddress('deepak@bleap.in');               //Name is optional
-    // $mail->addReplyTo('deepak@bleap.in', 'Information');
-    // $mail->addCC('deepak@bleap.in');
-    // $mail->addBCC('deepak@bleap.in');
+    // $mail->setFrom('deepak@gmail.com', 'Mailer');
+    // $mail->addAddress('deepak@git.in', 'Dee User');     //Add a recipient
+    // $mail->addAddress('deepak@git.in');               //Name is optional
+    // $mail->addReplyTo('deepak@git.in', 'Information');
+    // $mail->addCC('deepak@git.in');
+    // $mail->addBCC('deepak@git.in');
 
     //Attachments
 
@@ -79,7 +79,7 @@ try {
 
     //Content
     $mail->isHTML(true);                                  //Set email format to HTML
-    $mail->Subject = 'Monarch New Form Submission ';
+    $mail->Subject = ' New Form Submission ';
     $mail->Body    = $messagecontent;
     
     
@@ -89,7 +89,7 @@ try {
      // Add a JavaScript script for redirection
      echo '<script>';
      echo 'setTimeout(function() {';
-     echo '   window.location = "https://test.dtechcluster.com";'; // Redirect to          test.dtechcluster.com
+     echo '   window.location = "https://github.com/DeepakMurugan/";'; // Redirect to  https://github.com/DeepakMuruga        
        echo '}, 3000);'; // 5000 milliseconds (5 seconds)
      echo '</script>';
 
