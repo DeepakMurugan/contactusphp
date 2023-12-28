@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css">
+</head>
+<body>
+  <div class="container">
+    <div class="row justify-content-center mt-5">
+      <div class="col-md-10">
+        <form id="contact-form" method="post" action="../customform/submit.php">
+          <h2 class="mb-4">Send us a message </h2>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="first-name">First Name:</label>
+              <input type="text" class="form-control" id="first-name" name="first_name" placeholder="First Name" required>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="last-name">Last Name:</label>
+              <input type="text" class="form-control" id="last-name" name="last_name" placeholder="Last Name" >
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email ID:</label>
+            <input type="email" class="form-control" name="email" id="email" required>
+          </div>
+          <div class="form-group">
+            <label for="country">Country:</label>
+            <select class="form-control" id="country" name="country" required>
+              <option value="">Select Your Country</option>
+              <option value="IN" data-id='+91' >India</option>
+              <option value="US" data-id="+1">United States </option>
+              <option value="AU" data-id="+61">Australia</option>
+              <option value="CA" data-id="+1">Canada </option>
+                <option value="AF" data-id="+93">Afghanistan</option>
+                <option value="AX" data-id="+358">Aland Islands</option>
+                <option value="AL" data-id="+355">Albania </option>
+                <option value="DZ" data-id="+213">Algeria </option>
+                <option value="AU" data-id="+61">Australia</option>
+                <option value="GB" data-id='+91'>United Kingdom</option>
+                <option value="AS" data-id='+1-684'>American Samoa</option>
+                <option value="AD" data-id='+376'>Andorra</option>
+                <option value="AO" data-id='+244'>Angola</option>
+                <option value="AI" data-id='+1-264'>Anguilla</option>
+                <option value="AQ" data-id='+672'>Antarctica</option>
+                <option value="AG"data-id='+1-268'>Antigua and Barbuda</option>
+                <option value="AR" data-id='+54'>Argentina</option>
+                <option value="AM" data-id='+374'>Armenia</option>
+                <option value="AW" data-id='+297'>Aruba</option>
+                <option value="AU" data-id='+61'>Australia</option>
+                <option value="AT" data-id='+43'>Austria</option>
+                <option value="AZ" data-id='+91'>Azerbaijan</option>
+                <option value="BS" data-id='+1-242'>Bahamas</option>
+                <option value="BH" data-id='+973'>Bahrain</option>
+                <option value="BD" data-id='+880'>Bangladesh</option>
+                <option value="BB" data-id='+1-246'>Barbados</option>
+                <option value="BY" data-id='+375'>Belarus</option>
+                <option value="BE" data-id='+32'>Belgium</option>
+                <option value="BZ" data-id='+501'>Belize</option>
+                <option value="BJ" data-id='+229'>Benin</option>
+                <option value="BM" data-id='+1-441'>Bermuda</option>
+                <option value="BT" data-id='+975'>Bhutan</option>
+                <option value="BO" data-id='+591'>Bolivia</option>
+                <option value="BA" data-id='+387'>Bosnia and Herzegovina</option>
+                <option value="BW" data-id='+267'>Botswana</option>
+                <!-- <option value="BV" data-id='+'>Bouvet Island</option> -->
+                <option value="BR" data-id='+55'>Brazil</option>
+                <option value="IO" data-id='+246'>British Indian Ocean Territory</option>
+                <option value="BN" data-id='+673'>Brunei Darussalam</option>
+                <option value="BG" data-id='+359'>Bulgaria</option>
+                <option value="BF" data-id='+226'>Burkina Faso</option>
+                <option value="BI" data-id='+257'>Burundi</option>
+                <option value="KH" data-id='+855'>Cambodia</option>
+                <option value="CM" data-id='+237'>Cameroon</option>
+                <option value="CA" data-id='+1'>Canada</option>
+                <option value="CV" data-id='+238'>Cape Verde</option>
+                <option value="KY" data-id='+1-345'>Cayman Islands</option>
+                <option value="CF" data-id='+236'>Central African Republic</option>
+                <option value="TD" data-id='+235'>Chad</option>
+                <option value="CL" data-id='+56'>Chile</option>
+                <option value="CN" data-id='+86'>China</option>
+                <option value="CX" data-id='+61'>Christmas Island</option>
+                <option value="CC" data-id='+61'>Cocos (Keeling) Islands</option>           
+                <option value="CO" data-id='+57'>Colombia</option>
+                <option value="KM" data-id='+269'>Comoros</option>
+                <option value="CG" data-id='+242'>Congo</option>
+                <option value="CD" data-id='+243'>Congo, The Democratic Republic of The</option>
+                <option value="CK" data-id='+682'>Cook Islands</option>
+                <option value="CR" data-id='+502'>Costa Rica</option>
+                <!-- <option value="CI" data-id='+'>Cote D'ivoire</option> -->
+                <option value="HR" data-id='+385'>Croatia</option>
+                <option value="CU" data-id='+53'>Cuba</option>
+                <option value="CY" data-id='+357'>Cyprus</option>
+                <option value="CZ" data-id='+420'>Czech Republic</option>
+                <option value="DK" data-id='+45'>Denmark</option>
+                <option value="DJ" data-id='+253'>Djibouti</option>
+                <option value="DM" data-id='+1-767'>Dominica</option>
+                <option value="DO" data-id='+1-809'>Dominican Republic</option>
+                <option value="EC" data-id='+593'>Ecuador</option>
+                <option value="EG" data-id='+20'>Egypt</option>
+                <option value="SV" data-id='+503'>El Salvador</option>
+                <option value="GQ" data-id='+240'>Equatorial Guinea</option>
+                <option value="ER" data-id='+291'>Eritrea</option>
+                <option value="EE" data-id='+372'>Estonia</option>
+                <option value="ET" data-id='+251'>Ethiopia</option>
+                <option value="FK" data-id='+500'>Falkland Islands (Malvinas)</option>
+                <option value="FO" data-id='+298'>Faroe Islands</option>
+                <option value="FJ" data-id='+679'>Fiji</option>
+                <option value="FI" data-id='+358'>Finland</option>
+                <option value="FR" data-id='+33'>France</option>
+                <!-- <option value="GF" data-id='+'>French Guiana</option> -->
+                <option value="PF" data-id='+689'>French Polynesia</option>
+                <!-- <option value="TF" data-id='+91'>French Southern Territories</option> -->
+                <option value="GA" data-id='+241'>Gabon</option>
+                <option value="GM" data-id='+220'>Gambia</option>
+                <option value="GE" data-id='+995'>Georgia</option>
+                <option value="DE" data-id='+49'>Germany</option>
+                <option value="GH" data-id='+233'>Ghana</option>
+                <option value="GI" data-id='+350'>Gibraltar</option>
+                <option value="GR" data-id='+30'>Greece</option>
+                <option value="GL" data-id='+299'>Greenland</option>
+                <option value="GD" data-id='+1-473'>Grenada</option>
+                <!-- <option value="GP" data-id='+1-671'>Guadeloupe</option> -->
+                <option value="GU" data-id='+1-671'>Guam</option>
+                <option value="GT" data-id='+502'>Guatemala</option>
+                <option value="GG" data-id='+44-1481'>Guernsey</option>
+                <option value="GN" data-id='+224'>Guinea</option>
+                <option value="GW" data-id='+245'>Guinea-Bissau</option>
+                <option value="GY" data-id='+592'>Guyana</option>
+                <option value="HT" data-id='+509'>Haiti</option>
+                <!-- <option value="HM" data-id='+'>Heard Island and McDonald Islands</option> -->
+                <!-- <option value="VA" data-id='+91'>Holy See (Vatican City State)</option> -->
+                <option value="HN" data-id='+504'>Honduras</option>
+                <option value="HK" data-id='+91'>Hong Kong</option>
+                <option value="HU" data-id='+504'>Hungary</option>
+                <option value="IS" data-id='+354'>Iceland</option>
+                <option value="IN" data-id='+91'>India</option>
+                <option value="ID" data-id='+62'>Indonesia</option>
+                <option value="IR" data-id='+98'>Iran, Islamic Republic of</option>
+                <option value="IQ" data-id='+964'>Iraq</option>
+                <option value="IE" data-id='+354'>Ireland</option>
+                <option value="IM" data-id='+44-1624'>Isle of Man</option>
+                <option value="IL" data-id='+972'>Israel</option>
+                <option value="IT" data-id='+39'>Italy</option>
+                <option value="JM" data-id='+1-876'>Jamaica</option>
+                <option value="JP" data-id='+81'>Japan</option>
+                <option value="JE" data-id='+44-1534'>Jersey</option>
+                <option value="JO" data-id='+962'>Jordan</option>
+                <option value="KZ" data-id='+7'>Kazakhstan</option>
+                <option value="KE" data-id='+254'>Kenya</option>
+                <option value="KI" data-id='+686'>Kiribati</option>
+                <option value="KP" data-id='+383'>Korea</option>
+                <!-- <option value="KR" data-id='+'>Korea, Republic of</option> -->
+                <option value="KW" data-id='+965'>Kuwait</option>
+                <option value="KG" data-id='+996'>Kyrgyzstan</option>
+                <option value="LA" data-id='+856'>Lao People's Democratic Republic</option>
+                <option value="LV" data-id='+371'>Latvia</option>
+                <option value="LB" data-id='+961'>Lebanon</option>
+                <option value="LS" data-id='+266'>Lesotho</option>
+                <option value="LR" data-id='+231'>Liberia</option>
+                <option value="LY" data-id='+218'>Libyan Arab Jamahiriya</option>
+                <option value="LI" data-id='+423'>Liechtenstein</option>
+                <option value="LT" data-id='+370'>Lithuania</option>
+                <option value="LU" data-id='+352'>Luxembourg</option>
+                <option value="MO" data-id='+853'>Macau</option>
+                <option value="MK" data-id='+389'>Macedonia </option>
+                <option value="MG" data-id='+261'>Madagascar</option>
+                <option value="MW" data-id='+265'>Malawi</option>
+                <option value="MY" data-id='+60'>Malaysia</option>
+                <option value="MV" data-id='+960'>Maldives</option>
+                <option value="ML" data-id='+223'>Mali</option>
+                <option value="MT" data-id='+356'>Malta</option>
+                <option value="MH" data-id='+692'>Marshall Islands</option>
+                <!-- <option value="MQ" data-id='+222'>Martinique</option> -->
+                <option value="MR" data-id='+222'>Mauritania</option>
+                <option value="MU" data-id='+230'>Mauritius</option>
+                <option value="YT" data-id='+262'>Mayotte</option>
+                <option value="MX" data-id='+52'>Mexico</option>
+                <option value="FM" data-id='+691'>Micronesia, Federated States of</option>
+                <option value="MD" data-id='+373'>Moldova, Republic of</option>
+                <option value="MC" data-id='+377'>Monaco</option>
+                <option value="MN" data-id='+976'>Mongolia</option>
+                <option value="ME" data-id='+382'>Montenegro</option>
+                <option value="MS" data-id='+1-664'>Montserrat</option>
+                <option value="MA" data-id='+212'>Morocco</option>
+                <option value="MZ" data-id='+258'>Mozambique</option>
+                <option value="MM" data-id='+95'>Myanmar</option>
+                <option value="NA" data-id='+264'>Namibia</option>
+                <option value="NR" data-id='+674' >Nauru</option>
+                <option value="NP" data-id='+977'>Nepal</option>
+                <option value="NL" data-id='+31'>Netherlands</option>
+                <option value="AN" data-id='+599'>Netherlands Antilles</option>
+                <option value="NC" data-id='+687'>New Caledonia</option>
+                <option value="NZ" data-id='+64'>New Zealand</option>
+                <option value="NI" data-id='+505'>Nicaragua</option>
+                <option value="NE" data-id='+227'>Niger</option>
+                <option value="NG" data-id='+234'>Nigeria</option>
+                <option value="NU" data-id='+683'>Niue</option>
+                <option value="NF" data-id='+850'>Norfolk Island</option>
+                <option value="MP" data-id='+1-670'>Northern Mariana Islands</option>
+                <option value="NO" data-id='+47'>Norway</option>
+                <option value="OM" data-id='+968'>Oman</option>
+                <option value="PK" data-id='+92'>Pakistan</option>
+                <option value="PW" data-id='+680'>Palau</option>
+                <option value="PS" data-id='+970'>Palestinian Territory, Occupied</option>
+                <option value="PA" data-id='+507'>Panama</option>
+                <option value="PG" data-id='+675'>Papua New Guinea</option>
+                <option value="PY" data-id='+595'>Paraguay</option>
+                <option value="PE" data-id='+51'>Peru</option>
+                <option value="PH" data-id='+63'>Philippines</option>
+                <option value="PN" data-id='+64'>Pitcairn</option>
+                <option value="PL" data-id='+48'>Poland</option>
+                <option value="PT" data-id='+351'>Portugal</option>
+                <option value="PR" data-id='+1-787'>Puerto Rico</option>
+                <option value="QA" data-id='+974'>Qatar</option>
+                <option value="RE" data-id='+262'>Reunion</option>
+                <option value="RO" data-id='+40'>Romania</option>
+                <option value="RU" data-id='+7'>Russian Federation</option>
+                <option value="RW" data-id='+250'>Rwanda</option>
+                <option value="SH" data-id='+290'>Saint Helena</option>
+                <option value="KN" data-id='+1-869'>Saint Kitts and Nevis</option>
+                <option value="LC" data-id='+1-758'>Saint Lucia</option>
+                <option value="PM" data-id='+590'>Saint Pierre and Miquelon</option>
+                <option value="VC" data-id='+1-784'>Saint Vincent and The Grenadines</option>
+                <option value="WS" data-id='+685'>Samoa</option>
+                <option value="SM" data-id='+378'>San Marino</option>
+                <option value="ST" data-id='+239'>Sao Tome and Principe</option>
+                <option value="SA" data-id='+966'>Saudi Arabia</option>
+                <option value="SN" data-id='+221'>Senegal</option>
+                <option value="RS" data-id='+381'>Serbia</option>
+                <option value="SC" data-id='+248'>Seychelles</option>
+                <option value="SL" data-id='+232'>Sierra Leone</option>
+                <option value="SG" data-id='+65'>Singapore</option>
+                <option value="SK" data-id='+421'>Slovakia</option>
+                <option value="SI" data-id='+386'>Slovenia</option>
+                <option value="SB" data-id='+677'>Solomon Islands</option>
+                <option value="SO" data-id='+252'>Somalia</option>
+                <option value="ZA" data-id='+27'>South Africa</option>
+                <!-- <option value="GS" data-id='+'>South Georgia and The South Sandwich Islands</option> -->
+                <option value="ES" data-id='+34'>Spain</option>
+                <option value="LK" data-id='+94'>Sri Lanka</option>
+                <option value="SD" data-id='+249'>Sudan</option>
+                <option value="SR" data-id='+597'>Suriname</option>
+                <option value="SJ" data-id='+47'>Svalbard and Jan Mayen</option>
+                <option value="SZ" data-id='+268'>Swaziland</option>
+                <option value="SE" data-id='+46'>Sweden</option>
+                <option value="CH" data-id='+41'>Switzerland</option>
+                <option value="SY" data-id='+963'>Syrian Arab Republic</option>
+                <option value="TW" data-id='+883'>Taiwan</option>
+                <option value="TJ" data-id='+992'>Tajikistan</option>
+                <option value="TZ" data-id='+255'>Tanzania, United Republic of</option>
+                <option value="TH" data-id='+66'>Thailand</option>
+                <!-- <option value="TL" data-id='+'>Timor-leste</option> -->
+                <option value="TG" data-id='+228'>Togo</option>
+                <option value="TK" data-id='+690'>Tokelau</option>
+                <option value="TO" data-id='+676'>Tonga</option>
+                <option value="TT" data-id='+1-868'>Trinidad and Tobago</option>
+                <option value="TN" data-id='+216'>Tunisia</option>
+                <option value="TR" data-id='+90'>Turkey</option>
+                <option value="TM" data-id='+993'>Turkmenistan</option>
+                <option value="TC" data-id='+1-649'>Turks and Caicos Islands</option>
+                <option value="TV" data-id='+688'>Tuvalu</option>
+                <option value="UG" data-id='+256'>Uganda</option>
+                <option value="UA" data-id='+380'>Ukraine</option>
+                <option value="AE" data-id='+971'>United Arab Emirates</option>
+                <option value="GB" data-id='+44'>United Kingdom</option>
+                <option value="UM" data-id='+1'>United States Minor Outlying Islands</option>
+                <option value="UY" data-id='+598'>Uruguay</option>
+                <option value="UZ" data-id='+998'>Uzbekistan</option>
+                <option value="VU" data-id='+678'>Vanuatu</option>
+                <option value="VE" data-id='+58'>Venezuela</option>
+                <option value="VN" data-id='+84'>Viet Nam</option>
+                <option value="VG" data-id='+1-284'>Virgin Islands, British</option>
+                <!-- <option value="VI" data-id='+91'>Virgin Islands, U.S.</option> -->
+                <option value="WF" data-id='+681'>Wallis and Futuna</option>
+                <option value="EH" data-id='+212'>Western Sahara</option>
+                <option value="YE" data-id='+967'>Yemen</option>
+                <option value="ZM" data-id='+260'>Zambia</option>
+                <option value="ZW" data-id='+263'>Zimbabwe</option>       
+              <!-- Add more country options here -->
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="mobile">Mobile:</label>
+            <!-- <div class="input-group-prepend">
+                <span class="input-group-text">
+                  <span class="iti__selected-flag"></span>
+                </span>
+              </div> -->
+            <input type="tel" class="form-control" id="phone" name="mobile" placeholder="Mobile Number" pattern="[0-9]" required>
+            <input type="hidden" class="form-control mobileval" id="mobileval" name="mobileval">
+            <div id="phone-error" style="display: none; color: red;">Please enter a valid mobile number.</div>
+          </div>
+          <div class="form-group">
+            <label for="landline">Landline:</label>
+            <input type="tel" class="form-control" id="landline" name="landline" placeholder="Landline Number" >
+          </div>
+          <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea class="form-control" id="message" name="message" placeholder="Enter your message here" rows="4"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      // Initialize the country dropdown with intl-tel-input
+      $("#country").change(function() {
+        var countryCode = $(this).val().toLowerCase();
+  
+        var mobilval = $(this).find(':selected').data('id');
+  
+        $('.mobileval').val(mobilval);
+        $(".iti__selected-flag").attr("class", "iti__selected-flag flag-icon flag-icon-" + countryCode);
+  
+        // If the selected country is India, set the input pattern to allow only 10 digits
+        // if (countryCode === "in") {
+        //   $("#phone").attr("pattern", "[0-9]{10}");
+        // } else {
+        //   // For other countries, remove the pattern attribute
+        //   $("#phone").removeAttr("pattern");
+        // }
+
+
+        if (countryCode === "in") {
+       $("#phone").attr("pattern", "[0-9]{10}");
+       } else {
+         // For other countries, update the pattern to allow only numbers
+
+       $("#phone").attr("pattern", "[0-9]*");
+
+        }
+
+
+
+
+
+      });
+  
+      // Initialize the phone number input with intl-tel-input
+      $("#phone").intlTelInput({
+        separateDialCode: true,
+        initialCountry: "auto",
+        utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"
+      });
+  
+      // Submit form handler
+      $("#contact-form").submit(function(event) {
+        // Prevent the default form submission
+        event.preventDefault();
+  
+        // Perform your form data validation here if needed
+  
+        // Submit the form data using AJAX
+        $.ajax({
+          url: "submit.php", // Your form submission URL
+          type: "POST",
+          data: $(this).serialize(), // Serialize the form data
+          success: function(response) {
+            // Display a success message to the user
+            alert(response);
+  
+            // Redirect the user to test.dtechcluster.com after a delay of 3 seconds
+            // setTimeout(function() {
+            //   window.location.href = "http://test.dtechcluster.com";
+            // }, 3000);
+
+
+            // Redirect the user to test.dtechcluster.com after a delay of 3 seconds
+            // setTimeout(function() {
+            //   window.location.replace("http://test.dtechcluster.com");
+            // }, 3000);
+
+
+            // Redirect the user to test.dtechcluster.com in a new tab after a delay of 3 seconds
+             setTimeout(function() {
+               window.open("http://test.dtechcluster.com", "_blank"  );
+              }, 2000);
+
+
+              // Redirect the user to test.dtechcluster.com after a delay of 3 seconds
+            //  setTimeout(function() {
+            //    window.location.replace("http://test.dtechcluster.com");
+            //  }, 3000);
+
+            //  // Disable the browser's back button functionality
+            //  window.history.pushState(null, null, window.location.href);
+            //    window.onpopstate = function () {
+            //  window.history.go(1);
+            //      };
+
+
+
+
+
+
+          },
+          error: function(xhr, status, error) {
+            // Display an error message to the user
+            alert("An error occurred while submitting the form: " + error);
+          }
+        });
+      });
+    });
+  </script>
+  
+</body>
+</html>
